@@ -73,3 +73,7 @@ export LESS_TERMCAP_us=$(printf "\e[0;36m")
 function env() {
   exec /usr/bin/env "$@" | grep -v ^LESS_TERMCAP_
 }
+
+
+# open nautilus from current location
+alias n="nautilus ."
