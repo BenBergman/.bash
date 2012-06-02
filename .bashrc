@@ -1,4 +1,4 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
+# ~/.bash/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -67,7 +67,7 @@ esac
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    test -r ~/.bash/.dircolors && eval "$(dircolors -b ~/.bash/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
@@ -84,11 +84,11 @@ alias l='ls -CF'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
+# ~/.bash/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/.bash/.bash_aliases ]; then
+    . ~/.bash/.bash_aliases
 fi
 
  # make bash autocomplete with up arrow 
@@ -243,8 +243,8 @@ export PATH=$PATH:~/.bin
 export PATH=$PATH:~/git/git-hooks
 
 # My custom additions
-if [ -f ~/.bashrc_custom ]; then
-  . ~/.bashrc_custom
+if [ -f ~/.bash/.bashrc_custom ]; then
+  . ~/.bash/.bashrc_custom
 fi
 
 echo $HOSTNAME | toilet -f future --metal

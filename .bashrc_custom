@@ -2,8 +2,8 @@
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/.bash/.bash_aliases ]; then
+    . ~/.bash/.bash_aliases
 fi
 
 if [ -d "$HOME/bin" ] ; then
