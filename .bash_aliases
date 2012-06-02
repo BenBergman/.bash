@@ -36,6 +36,7 @@ alias ls='ls -hF --color=always'
 alias lr='ls -R'                    # recursive ls
 alias ll='ls -l'
 alias la='ll -A'
+alias lA='ls -d .??*'               # show only hidden files
 alias lx='ll -BX'                   # sort by extension
 alias lz='ll -rS'                   # sort by size
 alias lt='ll -rt'                   # sort by date
